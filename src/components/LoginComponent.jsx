@@ -14,7 +14,7 @@ export default function LoginComponent() {
     try{
       let res = await LoginAPI(credentials.email, credentials.password);
       toast.success('Signed In to Linkedin!');
-      navigate('/home');
+      navigate('/home')
     }
     catch(err){
       toast.error("Please check your Credentials!")
